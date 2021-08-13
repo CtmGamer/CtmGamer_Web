@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CtmGamer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+      body {
+        background-color: black;
+        color: white;
+
+        background: no-repeat center center fixed; 
+        background-image: url("bg-1.webp"), url("bg-2.webp"), url("bg-3.jpeg");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        animation: bg 15s infinite both;
+      }
+      a {
+        text-decoration: none;
+      }
+
+
+      .glow-blue {
+        color: #43b9e7;
+        text-shadow: 0 0 10px #45b2dd, 0 0 20px #3BB2E2;
+      }
+      .navbar-blue-shine .navbar-brand {
+        color: #43b9e7;
+        text-shadow: 0 0 10px #45b2dd, 0 0 20px #3BB2E2;
+      }
+      .navbar-blue-shine .navbar-brand:focus,
+      .navbar-blue-shine .navbar-brand:hover {
+        color: #e3f7ff;
+      }
+      .navbar-blue-shine .navbar-nav .nav-link {
+        color: #43b9e7;
+      }
+      .navbar-blue-shine .navbar-nav .nav-link:focus,
+      .navbar-blue-shine .navbar-nav .nav-link:hover {
+        color: #dbdbdb;
+      }
+      .navbar-blue-shine .navbar-nav .nav-link.disabled {
+        color: rgba(255, 255, 255, .25)
+      }
+      .navbar-blue-shine .navbar-nav .nav-link.active,
+      .navbar-blue-shine .navbar-nav .show > .nav-link {
+        color: #fff
+      }
+      .navbar-blue-shine .navbar-toggler {
+        color: rgba(255, 255, 255, .55);
+        border-color: rgba(255, 255, 255, .1)
+      }
+      .navbar-blue-shine .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml, %3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+      }
+      .navbar-blue-shine .navbar-text {
+        color: rgba(255, 255, 255, .55)
+      }
+      .navbar-blue-shine .navbar-text a,
+      .navbar-blue-shine .navbar-text a:focus,
+      .navbar-blue-shine .navbar-text a:hover {
+        color: #fff
+      }
+      .carousel-item {
+        padding: 250px 0;
+        text-align: center;
+      }
+      .carousel-image {
+        display: block;
+        margin: 0px auto;
+        width: 100%;
+        height: 800px;
+        position: relative;
+        z-index: -1;
+        transform: translateY(-600px);
+      }
+      .carousel-text {
+        text-align: center;
+        font-size: 4.5em;
+      }
+      .carousel-text.sub {
+        color: #fff;
+        font-size: 2.5em;
+      }
+
+      #page-navbar {
+        background-color: black;
+      }
+      #carouselExampleControls {
+        width: 100vw;
+        height: 600px;
+        box-shadow: 0 5px 10px #45b2dd, 0 5px 20px #3BB2E2;
+      }
+      #webpage-content {
+        padding: 20px;
+        padding-top: 40px;
+        width: 100vw;
+        height: auto;
+        display: block;
+        background-color: black;
+      }
+      #about, #projects {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 10px 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 3px -2px #3BB2E2;
+      }
+      #about-head, #projects-head {
+        font-size: 2.5em;
+      }
+      #about-body, #projects-body {
+        color: #fff;
+      }
+
+      @keyframes bg {
+        0% {background-image: url("bg-1.webp");}
+        24% {background-image: url("bg-2.webp");}
+        49% {background-image: url("bg-3.jpeg");}
+      }
+    </style>
+    </head>
+  <body>
+    <nav id="page-navbar" class="navbar navbar-expand-lg navbar-blue-shine">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">CtmGamer</a>
+      </div>
+    </nav>
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h1 class="carousel-text glow-blue">CtmGamer</h1>
+          <h1 class="carousel-text sub glow-blue">Welcome!</h1>
+          <!-- <img class="carousel-image" src="bg-1.webp" alt="..."> -->
+        </div>
+        <div class="carousel-item">
+          <a href="#about">
+            <h1 class="carousel-text glow-blue">About</h1>
+            <h1 class="carousel-text sub glow-blue">click here</h1>
+          </a>
+          <!-- <img class="carousel-image" src="bg-2.webp" alt="..."> -->
+        </div>
+        <div class="carousel-item">
+          <a href="#projects">
+            <h1 class="carousel-text glow-blue">Projects</h1>
+            <h1 class="carousel-text sub glow-blue">click here</h1>
+          </a>
+          <!-- <img class="carousel-image" src="bg-3.jpeg" alt="..."> -->
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div id="webpage-content">
+      <div id="about">
+          <h1 id="about-head" class="glow-blue">About</h1>
+          <p id="about-body" class="glow-blue">
+            I am a x-yrs old boy from kerala, India.<br>
+            I know HTML, CSS, Javascript, Java.<br>
+            And Learning Python, C++, C# and PHP
+          </p>
+      </div>
+
+      <div id="projects">
+        <h1 id="projects-head" class="glow-blue">Project</h1>
+        <p id="projects-body" class="glow-blue">
+          Dont have any projects :(
+        </p>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+</html>
